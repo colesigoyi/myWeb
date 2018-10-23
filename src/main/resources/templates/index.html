@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>learn Resources</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<div style="text-align: center;margin:0 auto;width: 1000px; ">
+    <h1>  人生不就是要么在学习，要么是在去学习的路上么？</h1>
+    <h2>Keep Going!</h2>
+    <table width="100%" border="1" cellspacing="1" cellpadding="0">
+        <tr>
+            <!--<td>网站</td>
+            <td>链接</td>
+            <td>地址</td>-->
+        </tr>
+        <!--/*@thymesVar id="learnList" type=""*/-->
+        <tr th:each="learn : ${learnList}">
+            <!--<td th:text="${learn.author}">嘟嘟MD</td>-->
+            <td><a th:text="${learn.title}" target="_blank"></a><a th:href="${learn.url}"></a></td>
+            <td><a th:href="${learn.url}" target="_blank">点我</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
