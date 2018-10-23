@@ -38,7 +38,7 @@ public class LearnResourceController {
     }
 
     @RequestMapping("/favoriteweb")
-    public ModelAndView index2(){
+    public ModelAndView favoriteweb(){
 
         List<LearnResouce> learnList =new ArrayList<LearnResouce>();
         LearnResouce bean =new LearnResouce("官方参考文档","Spring Boot Reference Guide","http://docs.spring.io/spring-boot/docs/1.5.1.RELEASE/reference/htmlsingle/#getting-started-first-application");
