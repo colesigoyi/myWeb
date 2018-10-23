@@ -15,9 +15,6 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by tengj on 2017/3/7.
- */
 @Controller
 
 public class LearnResourceController {
